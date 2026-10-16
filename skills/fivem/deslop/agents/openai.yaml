@@ -1,0 +1,3 @@
+interface:
+  display_name: "Deslop"
+  short_description: "Remove AI slop from FiveM resource code"

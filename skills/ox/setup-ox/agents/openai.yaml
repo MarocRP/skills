@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup ox"
+  short_description: "Set subagent models and your FiveM project"
+policy:
+  allow_implicit_invocation: false

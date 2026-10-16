@@ -1,0 +1,22 @@
+{
+  "name": "overextended",
+  "owner": {
+    "name": "Overextended",
+    "url": "https://github.com/overextended"
+  },
+  "description": "Overextended's agent skills for FiveM development, as an installable plugin.",
+  "plugins": [
+    {
+      "name": "overextended-skills",
+      "source": "./",
+      "description": "Agent skills for building FiveM resources with ox_lib, ox_core, ox_inventory, ox_target and oxmysql.",
+      "category": "development",
+      "keywords": [
+        "fivem",
+        "overextended",
+        "ox_lib",
+        "lua"
+      ]
+    }
+  ]
+}

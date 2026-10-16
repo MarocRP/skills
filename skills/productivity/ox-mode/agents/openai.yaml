@@ -1,0 +1,5 @@
+interface:
+  display_name: "ox mode"
+  short_description: "Work in the Overextended style, one playbook per task"
+policy:
+  allow_implicit_invocation: false

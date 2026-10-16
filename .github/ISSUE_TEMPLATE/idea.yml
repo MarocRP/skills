@@ -1,0 +1,24 @@
+name: Idea or feedback
+description: A change to a skill, or a new one, grounded in something you saw an agent get wrong.
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: Which skill this changes, or the resource/workflow a new skill would cover.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What went wrong
+      description: The real session where the agent fell short. What you asked for, what it did, and why that was a problem. Include harness and model.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: What you'd change or add, as concretely as you can.
+    validations:
+      required: true

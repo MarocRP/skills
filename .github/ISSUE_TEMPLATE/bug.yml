@@ -1,0 +1,48 @@
+name: Bug
+description: A skill made the agent do the wrong thing in a real session.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This tracker is for the skills. A bug in an ox resource itself belongs in that resource's repo.
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      description: Which skill, e.g. `ox-lib`, `oxmysql`.
+    validations:
+      required: true
+  - type: input
+    id: resource-version
+    attributes:
+      label: Resource version
+      description: The version of the ox resource you're building against, if the skill covers one.
+  - type: input
+    id: harness
+    attributes:
+      label: Harness and version
+      description: e.g. Claude Code 2.3.1, Codex CLI 0.40, Cursor. Say how you installed (plugin or skills.sh) and which skills version.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: e.g. Opus 5.5, GPT-5, high effort.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you asked for, and what the agent produced. Paste the relevant code or part of the session.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What it should have done instead, and which line of the SKILL.md (if any) says so or got it wrong.
+    validations:
+      required: true
