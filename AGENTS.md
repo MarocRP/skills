@@ -8,6 +8,8 @@ To add a skill, follow [.agents/new-skill.md](./.agents/new-skill.md).
 
 Every skill must have a reference in the top-level `README.md` and an entry in `.claude-plugin/plugin.json`'s `skills` array. Run `claude plugin validate .` after touching either manifest (not `--strict`: it rejects the root `CLAUDE.md`, which is for contributors, not shipped context). [ADR 0001](./.agents/adr/0001-ship-as-a-plugin-from-our-own-marketplace.md) records why.
 
+Run `npm run check-skills` after touching any skill or manifest. It parses every `SKILL.md` frontmatter and `agents/openai.yaml` and checks them against `plugin.json` and `docs/`. CI runs it on every push and pull request; `claude plugin validate` doesn't catch a frontmatter parse error.
+
 Install commands are copied verbatim from [.agents/install-block.md](./.agents/install-block.md).
 
 Each skill entry in the top-level `README.md` links the skill name to its `SKILL.md`.
