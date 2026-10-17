@@ -20,6 +20,7 @@
     "./skills/ox/setup-ox",
     "./skills/fivem/deslop",
     "./skills/fivem/lua-best-practices",
+    "./skills/fivem/resource-best-practices",
     "./skills/fivem/tdd",
     "./skills/fivem/typescript-best-practices",
     "./skills/productivity/architect",

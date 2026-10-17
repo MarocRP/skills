@@ -48,4 +48,4 @@ No. It verifies with what it can run itself: TypeScript tests, `lua-language-ser
 
 ## Where it fits
 
-The **router over the whole set**. It reads [principles](./principles.md), applies [lua-best-practices](../fivem/lua-best-practices.md) and [typescript-best-practices](../fivem/typescript-best-practices.md) to code, and calls the workflow skills ([how](./how.md), [why](./why.md), [architect](./architect.md), [arena](./arena.md), [swarm](./swarm.md), [interrogate](./interrogate.md)) at the steps that need them.
+The **router over the whole set**. It reads [principles](./principles.md), applies [lua-best-practices](../fivem/lua-best-practices.md), [typescript-best-practices](../fivem/typescript-best-practices.md) and [resource-best-practices](../fivem/resource-best-practices.md) to code, and calls the workflow skills ([how](./how.md), [why](./why.md), [architect](./architect.md), [arena](./arena.md), [swarm](./swarm.md), [interrogate](./interrogate.md)) at the steps that need them.

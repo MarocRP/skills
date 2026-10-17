@@ -8,5 +8,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 
 - **[deslop](./deslop/SKILL.md)**: Remove AI-generated slop from resource code without changing behaviour, keeping every server-side check on client data.
 - **[lua-best-practices](./lua-best-practices/SKILL.md)**: Structure resource Lua the way Overextended does: when to use `require`, `lib.load` or `lib.loadJson`, one entry script per side, convars for config, and ox_lib's `cache`, points and callbacks.
+- **[resource-best-practices](./resource-best-practices/SKILL.md)**: Standard FiveM practice beyond security: spawn entities client-side unless they must be networked, take network control only when the server whitelists it, clean up after players and restarts, and keep loops, network traffic and SQL lean.
 - **[tdd](./tdd/SKILL.md)**: Fix bugs in TypeScript resources test-first, with natives and ox_lib mocked so no server is needed.
 - **[typescript-best-practices](./typescript-best-practices/SKILL.md)**: Type resources and their NUI so impossible states don't compile, and parse everything that arrives through net events, callbacks, exports and state bags.

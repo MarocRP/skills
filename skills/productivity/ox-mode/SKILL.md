@@ -24,6 +24,7 @@ Remaining triggers:
 - Contested design → `interrogate` before shipping.
 - Nontrivial multi-step → write the throughput checkpoint (Feature step 3).
 - Lua code → `lua-best-practices`. TypeScript code or a TypeScript NUI → `typescript-best-practices`.
+- Writing or reviewing a resource's client or server code → `resource-best-practices`.
 - Any prose surface, your reply to the user included → write it per **Writing the reply**. Agent-facing prose (a skill, `AGENTS.md`, a plan) also follows `writing-for-agents`. A PR description follows `pr`.
 - Before commit → `deslop`.
 - Before review → `no-comments`.

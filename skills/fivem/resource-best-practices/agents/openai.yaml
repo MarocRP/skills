@@ -1,0 +1,3 @@
+interface:
+  display_name: "Resource Best Practices"
+  short_description: "Lifecycle, events, entities and data in FiveM code"
