@@ -8,20 +8,16 @@ Before writing a loop, find what pushes the change: a game or framework event, a
 - checks cheap conditions before expensive ones,
 - runs per-frame work (drawing, controls) only while it's needed.
 
+Don't hand-write a distance loop. `lib.points` checks the player's distance every 300 ms and runs `nearby` every frame only while the player is in range.
+
 ```lua
-CreateThread(function()
-    while true do
-        local sleep = 1000
-        local distance = #(GetEntityCoords(PlayerPedId()) - shopCoords)
-
-        if distance < 10.0 then
-            sleep = 0
-            drawShopMarker()
-        end
-
-        Wait(sleep)
-    end
-end)
+lib.points.new({
+    coords = shopCoords,
+    distance = 10.0,
+    nearby = function(self)
+        drawShopMarker()
+    end,
+})
 ```
 
 ## Requests and pushes

@@ -16,7 +16,7 @@ The default it changes most: entities are spawned on the client and non-networke
 | --- | --- |
 | Entities | Client and non-networked by default; networked ones spawned and deleted by the server. No network control unless the server whitelists it. Works with networked sounds, ragdoll requests and script entity states blocked. Models released after use. |
 | Lifecycle | Everything created is cleaned up on player drop, logout and `onResourceStop`. Handlers registered once. |
-| Events and network | Events and state-bag handlers before loops. `source` copied before the first yield. Targeted sends, deltas, small state bags written only by the server. |
+| Events and network | Events, state-bag handlers and `lib.points` before loops. `source` copied before the first yield. Targeted sends, deltas, small state bags written only by the server. |
 | Data | SQL in one module, parameterised and limited, conditional writes instead of read-then-write. Secrets in `set` convars. |
 
 ## It's working if

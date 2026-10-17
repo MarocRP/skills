@@ -169,7 +169,7 @@ CreateThread(function()
     local lastVehicle
 
     while true do
-        local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
+        local vehicle = GetVehiclePedIsIn(cache.ped, false)
 
         if vehicle ~= lastVehicle then
             lastVehicle = vehicle
